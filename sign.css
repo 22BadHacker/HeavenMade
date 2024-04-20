@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flexbox{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: nowrap;
+    background: linear-gradient(360 deg, hsl(186, 34%, 60%), hsl(27, 66%, 92%));
+}
+.img img{
+    width: 100%;
+    height: 80vh;
+    padding-top: 3px;
+    object-fit: cover;
+    /* position: relative;
+    left: -20px; */
+}
+.img-contain{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+
+}
+.contain .form{
+    width: fit-content;
+    padding: 50px 100px;
+    border: 1px solid yellow;
+    border-radius: 30px;
+    box-shadow: 0 0 20px grey;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content:center;
+    gap: 20px;
+    height: fit-content;
+    position: relative;
+    background: linear-gradient(to right, #d9e17f 5%, #54e6c6 30%, #f3fef6);
+}
+
+ .contain{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(180deg, hsl(186, 34%, 60%), hsl(27, 66%, 92%));
+
+} 
+
+h1{
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    position: relative;
+    animation: move linear infinite 2s;
+    animation-delay: .3s;
+    animation: change linear infinite 3s;
+    animation-delay: .5s;
+}
+h1::first-letter{
+    color: #fff;
+    font-size: 40px;
+    text-decoration: underline gold;
+    animation: change linear infinite 2s;
+    animation-duration: right;
+   
+}
+@keyframes change{
+    0%{color: #54e6c6;}
+    25%{color: #ff9966;}
+    50%{color: pink;}
+    75%{color: #d9e17f;}
+    100%{color: hsl(27, 66%, 92%);}
+}
+
+@keyframes move{
+    0%{
+        text-decoration: 4px underline #54e6c6;
+    }
+    25%{
+        text-decoration: 4px underline gold;
+    }
+    50%{
+        text-decoration: 4px underline hsl(186, 34%, 60%);
+    }
+    75%{
+        text-decoration: 4px underline #ff5e62;
+    }
+    100%{
+        text-decoration: 4px underline hsl(27, 66%, 92%);
+    }
+}
+
+p a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    /* padding-bottom: 20px; */
+    position: relative;
+    top: 10px;
+}
+p .google{
+    width: 20px;
+    /* margin-right: 5px; */
+    padding-top: 5px;
+    position: absolute;
+    left: 120px;
+    top: 4px;
+}
+p .twit{
+    width: 25px;
+    position: absolute;
+    left: 120px;
+    top: 7px;
+
+    /* margin-right: 5px; */
+    /* padding-top: 5px; */
+}
+.head{
+    margin-left: 10px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background: transparent;
+    box-shadow: 0 5px 10px gray;
+    width: 100%;
+    height: 44px;
+    text-align: center;
+    position: relative;
+}
+.head p::before{
+    content: ;
+}
+p span{
+    width: 10%;
+    color: rgba(0, 0, 0, .3);
+    height: 1px;
+    border: 1px solid ;
+    flex-direction: column;
+    display: flex;
+}
+p .line3{
+    position: absolute;
+    margin-left: -215px;
+    top: 42%;
+    width: 28%;
+    /* margin-top: -8px; */
+}
+p .line2{
+    position: absolute;
+    /* right: 250px;  */
+    top: 42%;
+    width: 28%;
+    margin-left: 50px;
+
+}
+.or{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, .7);
+    padding-top: 30px;
+}
+
+input{
+    border: none;
+    border-radius: 20px;
+    background: transparent;
+    box-shadow: 5px 5px 10px rgb(143, 141, 141);
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    outline: none;
+    padding-left: 30px;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input::placeholder{
+    font-size: 16px;
+    color: rgba(0, 0, 0, .7);
+    font-weight: 550;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 5px;
+    letter-spacing: 1px;
+    opacity: .4;
+}
+input:focus{
+    border: 1px solid #e6fef9;
+}
+label{
+    font-size: 17px;
+    margin-right:72%;
+    position: relative;
+    top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 550;
+    color: #f0f3de;
+    letter-spacing: 1px;
+    /* z-index: 10; */
+    letter-spacing: 2px;
+}
+label:focus-within{
+    color: #e1eef5;
+}
+.sign{
+    font-weight: bold;
+    text-align: center;
+    padding-right: 10px;
+    width: 100%;
+    color: #fff;
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    cursor: pointer;
+}
+
+/* .sign:hover{
+    scale: 1.1;
+    background: linear-gradient(to left, hsl(186, 34%, 60%), #ff9966);
+    transition: .2s;
+    color: gold;
+} */
+.sign:hover{
+    scale: 1.1;
+    background: #00fff2;
+    transition: .2s linear;
+    box-shadow: 0 0 5px #00fff2, 0 0 25px #00fff2,0 0 50px #00fff2, 0 0 100px #00fff2, 0 0 200px #00fff2;
+    color: #2b2b2b;
+    filter: blur(10);
+}
+.sign:focus{
+    border: none;
+}
+span a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 40px;
+}
+span .reset{
+    color: black;
+    font-size: 14px;
+    font-weight: 550;
+}
+span .for{
+    color: rgb(34, 32, 32);
+    font-size: 14px;
+}
+
+
+
+span a{
+    text-decoration: none;
+    margin-left: 4px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 27px;
+    position: relative;
+}
+.point{
+    font-size: 26px;
+    font-weight: bold;
+    padding-left: 4px;
+    color: #00cdac;
+    position: absolute;
+    left: 232px;
+    top: 20px;
+    font-size: 40px;
+    scale: 1.8;
+    animation: poop ease-in infinite 1.5s;
+}
+
+@keyframes poop{
+    0%{
+        translate: 0px 0px;
+    }
+    25%, 50%{
+        translate: 0px -20px;
+        color: #d9e17f;
+    }
+    50%{
+        translate: 0px 0px;
+        color: #ff9966;
+    }
+    75%{
+        translate: 0px 37px;
+        color: hsl(186, 34%, 60%);
+    }
+    100%{
+        translate: 0px 0px;
+    }
+}
+span .heav{
+    color: skyblue;
+    padding-left: 5px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+span .made{
+    position: absolute;
+    color: lightpink;
+    left: 89px;
+    top: 20px;
+}
